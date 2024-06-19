@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://kit.fontawesome.com/a2fa536777.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style1.css">
+  <title>Arriate Caffe'</title>
+</head>
+
+<body>
+
+  <nav class="navbar">
+    <div class="navbarContainer container">
+      <input type="checkbox">
+      <div class="hamburgLines">
+        <span class="lines line1"></span>
+        <span class="lines line2"></span>
+        <span class="lines line3"></span>
+      </div>
+      <ul class="menuItems">
+        <li><a href="#Home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#Category">Category</a></li>
+        <li><a href="#Menu">Menu</a></li>
+      </ul>
+      <h1 class="logo">Arriate Caffe'</h1>
+    </div>
+  </nav>
+
+  <header class="header" id="Home">
+    <div class="headerContent">
+      <p class="mainPara">Welcome to</p>
+      <h1 class="mainHeading">Korean</h1>
+      <h1 class="mainHeading">Caffe</h1>
+      <a href="#about" class="btn btnPrimary">Explore</a>
+    </div>
+  </header>
+
+
+  <section id="about">
+    <div class="aboutBox container">
+      <div class="aboutText">
+        <p class="small">About us</p>
+        <h2>Arriate Café brings you the authentic flavors of Korea in a cozy café atmosphere</h2>
+        <p>
+          We specialize in delicious, traditional Korean dishes served in a setting that reflects the charm of Korean cafes.
+
+Our meals are crafted with high-quality ingredients, ensuring a fresh and flavorful experience. Relax and enjoy our unique dining space designed to immerse you in Korean culinary and cultural delights. 
+        </p>
+      </div>
+      <div class="about-image">
+        <img src="img/about-image.jpeg" alt="about-image">
+      </div>
+    </div>
+  </section>
+
+  <section class="Food" id="Category">
+    <div class="container">
+      <h1>Types of food</h1>
+      <div class="foodBox">
+        <div class="foodType vegetables">
+          <div class="foodImg">
+            <img src="img/food1.jpeg" alt="">
+            <div class="foodImgContent">
+              <h3>Vegetables</h3>
+              <a href="#" class="btn btnPrimary">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <div class="foodType meat">
+          <div class="foodImg">
+            <img src="img/food2.jpeg" alt="">
+            <div class="foodImgContent">
+              <h3>Meat</h3>
+              <a href="#" class="btn btnPrimary">Learn More</a>
+            </div>
+          </div>
+        </div>
+        <div class="foodType snack">
+          <div class="foodImg">
+            <img src="img/food3.jpeg" alt="">
+            <div class="foodImgContent">
+              <h3>Snack</h3>
+              <a href="#" class="btn btnPrimary">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+
+  <section class="foodMenu" id="Menu">
+    <h2 class="foodMenuHeading">
+      Food menu
+    </h2>
+    <div class="foodMenuContainer container">
+      <div class="foodMenuItems">
+        <div class="foodMenuImg">
+          <img src="img/food-menu1.jpeg">
+        </div>
+        <div class="foodMenuText">
+          <h3>Bibimpap</h3>
+          <p>A Korean dish with rice, vegetables, beef, egg, and spicy gochujang sauce.</p>
+          <p class="foodPrice">Rp 30.000</p>
+        </div>
+      </div>
+      <div class="foodMenuItems">
+        <div class="foodMenuImage">
+          <img src="img/food-menu2.jpeg">
+        </div>
+        <div class="foodMenuText">
+          <h3>Japchae</h3>
+          <p>Korean glass noodles stir-fried with vegetables and beef.</p>
+          <p class="foodPrice">Rp 25.000</p>
+        </div>
+      </div>
+      <div class="foodMenuItems">
+        <div class="foodMenuImage">
+          <img src="img/food-menu3.jpeg">
+        </div>
+        <div class="foodMenuText">
+          <h3>Bulgogi</h3>
+          <p>Korean marinated beef, grilled to perfection.</p>
+          <p class="foodPrice">Rp 45.000</p>
+        </div>
+      </div>
+      <div class="foodMenuItems">
+        <div class="foodMenuImage">
+          <img src="img/food-menu4.jpeg">
+        </div>
+        <div class="foodMenuText">
+          <h3>Korean Spicy Chicken</h3>
+          <p> Korean-style, flavorful, and fiery.</p>
+          <p class="foodPrice">Rp 40.000</p>
+        </div>
+      </div>
+      <div class="foodMenuItems">
+        <div class="foodMenuImage">
+          <img src="img/food-menu5.jpeg">
+        </div>
+        <div class="foodMenuText">
+          <h3>Bungeoppang</h3>
+          <p>Korean fish-shaped pastry filled with sweet red bean paste.</p>
+          <p class="foodPrice">Rp 20.000</p>
+        </div>
+      </div>
+      <div class="foodMenuItems">
+        <div class="foodMenuImage">
+          <img src="img/food-menu6.jpeg">
+        </div>
+        <div class="foodMenuText">
+          <h3>Mandu</h3>
+          <p>Korean dumplings, savory and delightful.</p>
+          <p class="foodPrice">Rp 25.000</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="footer">
+    <h2>Caffe website &copy; all rights reserved </h2>
+  </footer>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      // Add smooth scrolling to all links
+      $("a").on('click', function(event) {
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+          // Store hash
+          var hash = this.hash;
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 800, function() {
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+    });
+  </script>
+
+</body>
+
+</html>
